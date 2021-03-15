@@ -16,7 +16,7 @@ if uploaded_file is not None:
 ###############Show dataframe#############################
     agree = st.checkbox('Show Dataframe')
     if agree:
-        st.table(dataframe)
+        st.dataframe(dataframe)
 ###############Genarate working matrix#############################
     agree = st.checkbox('Genarate Working Matrix')
     if agree:
