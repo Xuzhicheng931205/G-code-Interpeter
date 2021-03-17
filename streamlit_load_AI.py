@@ -3,5 +3,5 @@ import streamlit as st
 
 agree = st.checkbox('Show predict power consumption using AI model')
 if agree:
-    model = tf.keras.models.load_model(r"C:\Users\XUZHICHENG\IdeaProjects\mat\Python_Webkaifa\G_code_load_file_model\model_comsumption.h5")
+    model = tf.keras.models.load_model(r"https://github.com/Xuzhicheng931205/G-code-Interpeter/blob/Gcode/model_comsumption.h5")
     st.write("模型已经加载完了")
