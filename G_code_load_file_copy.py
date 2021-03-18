@@ -485,7 +485,7 @@ if uploaded_file is not None:
                      'Spindle_speed', 'Mist_Collecter','Coolant_pump','Feed_Rate']
         df1=Data_read[Goal_column]
 
-        model = tf.keras.models.load_model(r"C:\Users\XUZHICHENG\IdeaProjects\mat\Python_Webkaifa\G_code_load_file_model\model_comsumption.h5")
+        model = tf.keras.models.load_model('./save_model/model_comsumption.h5')
         #print("模型加载成功")
 
         value_arry=[]#功率预测初始值
