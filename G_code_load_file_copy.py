@@ -486,7 +486,7 @@ if uploaded_file is not None:
         df1=Data_read[Goal_column]
 
         model = tf.keras.models.load_model('./save_model/model_comsumption.h5')
-        #print("模型加载成功")
+        st.write("AI model is ready for loading")
 
         value_arry=[]#功率预测初始值
         st.write("Progross in prediction process:")
