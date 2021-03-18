@@ -533,7 +533,7 @@ if uploaded_file is not None:
             """
             csv = df.to_csv(index=False)
             b64 = base64.b64encode(csv.encode()).decode()  # some strings <-> bytes conversions necessary here
-            href = f'<a href="data:file/csv;base64,{b64}" download="Power consumption.csv"> Power consumption.CSV</a>'
+            href = f'<a href="data:file/csv;base64,{b64}" download="Power consumption.csv"> Download Power Consumption.CSV</a>'
             return href
 
         st.markdown(get_table_download_link1(df), unsafe_allow_html=True)
