@@ -526,7 +526,7 @@ if uploaded_file is not None:
 
 
         import base64
-        def get_table_download_link(df):
+        def get_table_download_link1(df):
             """Generates a link allowing the data in a given panda dataframe to be downloaded
             in:  dataframe
             out: href string
@@ -536,4 +536,4 @@ if uploaded_file is not None:
             href = f'<a href="data:file/csv;base64,{b64}" download="Power consumption.csv"> Download Working Matrix CSV File</a>'
             return href
 
-        st.markdown(get_table_download_link(df), unsafe_allow_html=True)
+        st.markdown(get_table_download_link1(df), unsafe_allow_html=True)
